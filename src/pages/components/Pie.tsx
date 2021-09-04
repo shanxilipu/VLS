@@ -1,16 +1,9 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import { Chart } from '@antv/g2';
 
-class Pie extends React.Component {
-    constructor(props: {} | Readonly<{}>) {
-        super(props)
-        this.state={ }
-    }
+const Pie = () =>  {
 
-  componentDidMount () {
-      this.fun();
-  }
-   fun() {
+   const fun = () => {
     const data = [
       { item: '事例一', count: 40, percent: 0.4 },  
       { item: '事例二', count: 21, percent: 0.21 },
@@ -59,14 +52,15 @@ class Pie extends React.Component {
     chart.render();
    }
 
-   render () {
+   useEffect(()=>{
+     fun()
+   }, [])
     return <div
     style={{
       width:'300px',
       height: '150px',
     }}
      id="pieContainer"></div>
-   }
 }
 
 export default Pie;

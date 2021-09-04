@@ -1,16 +1,8 @@
-import React from "react";
+import React, { useEffect, useState } from 'react';
 import { Chart } from '@antv/g2';
 
-class Line extends React.Component {
-    constructor(props: {} | Readonly<{}>) {
-        super(props)
-        this.state={ }
-    }
-
-  componentDidMount () {
-      this.fun();
-  }
-   fun() {
+const Line = () => {
+   const fun = () => {
     const data = [
       { year: '1991', value: 3 },
       { year: '1992', value: 4 },
@@ -51,7 +43,10 @@ class Line extends React.Component {
         chart.render();
    }
 
-   render () {
+   useEffect(() => {
+    fun();
+  }, []);
+
     return <div 
     id="lineContainer"
     style={{
@@ -59,7 +54,7 @@ class Line extends React.Component {
       height: '150px',
     }}
     ></div>
-   }
+
 }
 
 export default Line;
