@@ -121,7 +121,7 @@ const HBar = () =>  {
    }
    useEffect(() => {
     fun();
-  }, []);
+   }, []);
 
     return <div
            id="HBar"
