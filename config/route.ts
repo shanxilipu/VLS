@@ -8,6 +8,10 @@ export const routes = [
     component: '@/pages/home',
   },
   {
+    path: '/dataSet',
+    component: '@/pages/dataSet',
+  },
+  {
     component: '@/pages/404',
   },
 ];
