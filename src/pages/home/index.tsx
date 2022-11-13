@@ -17,7 +17,7 @@ const imgList = [
   {
     img: homeImg01,
     name: '报表制作',
-    url: '',
+    url: '/dashboard',
   },
   {
     img: homeImg02,

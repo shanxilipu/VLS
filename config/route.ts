@@ -12,6 +12,10 @@ export const routes = [
     component: '@/pages/dataSet',
   },
   {
+    path: '/dashboard',
+    component: '@/pages/dashboard',
+  },
+  {
     component: '@/pages/404',
   },
 ];
