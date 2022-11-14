@@ -1,0 +1,43 @@
+[
+  {
+    "id": "Table",
+    "type": "table",
+    "name": "基础表",
+    "icon": "icon-basetable"
+  },
+  {
+    "id": "TB",
+    "type": "bar",
+    "name": "柱状图",
+    "path": "charts/Bar",
+    "icon": "icon-barchart1"
+  },
+  {
+    "id": "TB",
+    "type": "hbar",
+    "name": "条形图",
+    "path": "charts/HBar",
+    "icon": "icon-hbarchart"
+  },
+  {
+    "id": "TB",
+    "type": "line",
+    "name": "折线图",
+    "path": "charts/Linec",
+    "icon": "icon-linechart1"
+  },
+  {
+    "id": "TB",
+    "type": "pie",
+    "name": "扇形图",
+    "path": "charts/Pie",
+    "icon": "icon-piechart1"
+  },
+  {
+    "id": "TB",
+    "type": "map",
+    "name": "地图",
+    "path": "map/ColorMap",
+    "icon": "icon-china"
+  }
+]
