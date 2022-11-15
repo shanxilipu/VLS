@@ -1,15 +1,21 @@
 import React from 'react';
 import Top from '@/pages/layouts/Top';
-import ToolBars from '@/pages/dashboard/toolbars';
+import DashboardTop from '@/pages/dashboard/layouts/top';
+import DashboardRight from '@/pages/dashboard/layouts/right';
+import DashboardLeft from '@/pages/dashboard/layouts/left';
+import styles from './index.less';
 
 interface Props {}
 
 const Dashboard = (props: Props) => {
   return (
     <>
-      <Top />
-      <ToolBars />
-      <div>报表制作</div>
+      <div className={styles.dashboardLeft}>
+        <DashboardTop />
+        <DashboardLeft />
+      </div>
+
+      <DashboardRight />
     </>
   );
 };
