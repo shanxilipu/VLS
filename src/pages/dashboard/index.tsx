@@ -1,5 +1,4 @@
 import React from 'react';
-import Top from '@/pages/layouts/Top';
 import DashboardTop from '@/pages/dashboard/layouts/top';
 import DashboardRight from '@/pages/dashboard/layouts/right';
 import DashboardLeft from '@/pages/dashboard/layouts/left';
